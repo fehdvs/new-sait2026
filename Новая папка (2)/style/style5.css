@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    max-width: 950px;
+    width: 100%;
+    background-color: white;
+    padding: 50px 40px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.article-block {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+.red-title {
+    color: #cc0000;
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 3px solid #cc0000;
+    display: inline-block;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+
+.article-body {
+    font-size: 22px;
+    line-height: 1.6;
+    color: #111;
+    max-width: 850px;
+    margin: 0 auto 40px auto;
+}
+
+.article-body p {
+    margin-bottom: 20px;
+}
+
+
+.image-center-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.image-center-container img {
+    max-width: 100%; /* Картинка не выходит за границы блока */
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+.back-link {
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+}
+
+.back-link a {
+    color: #cc0000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 700px) {
+    .main-container { padding: 25px 15px; }
+    .article-body { font-size: 18px; }
+    .red-title { font-size: 26px; }
+}
